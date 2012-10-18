@@ -1,0 +1,48 @@
+body{
+	background-color: #EFEFEF;
+}
+
+input.input-medium {
+    height: 30px;
+}
+
+.done{
+	color : #777;
+	text-decoration : line-through;
+}
+
+li.editing .view{
+	display : none;
+}
+
+li .edit{
+	display : none;
+}
+
+li.editing .edit{
+	display : block;
+}
+
+
+#main{
+	float:none;
+	margin : 0 auto;
+}
+
+#task-input{
+	width : 100%;
+}
+
+#task-list{
+	padding : 0;
+	margin : 30px 0 20px 0;
+}
+
+#task-list li{
+	margin-top : 10px;
+	border-bottom : 1px solid #ccc;
+}
+
+.well{
+	background-color : #fff;
+}
