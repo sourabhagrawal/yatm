@@ -51,8 +51,6 @@ $(function($){
 		initialize : function(){
 			this.model.bind('destroy', this.remove, this);
 			this.model.bind('change', this.change, this);
-			
-			this.input = this.$(".edit");
 		},
 		
 		render : function(){
@@ -76,7 +74,7 @@ $(function($){
 		
 		edit : function(){
 			this.$el.addClass("editing");
-			this.input.focus();
+			this.$('.edit').focus();
 		},
 		
 		revert : function(){
@@ -85,9 +83,10 @@ $(function($){
 		
 		save : function(e){
 			if (e.keyCode != 13) return;
-			var value = this.input.val();
+			var value = this.$('.edit').val();
 		    if (!value) this.destroy();
-		    this.model.save({title: value});
+		    this.model.save({text: value});
+		    this.$el.removeClass("editing");
 		}
 	});
 	

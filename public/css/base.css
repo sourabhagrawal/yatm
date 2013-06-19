@@ -46,3 +46,11 @@ li.editing .edit{
 .well{
 	background-color : #fff;
 }
+
+[class*="icon-"]{
+	margin-left : 3px;
+}
+
+li input[type='text']{
+	width : 100%
+}
